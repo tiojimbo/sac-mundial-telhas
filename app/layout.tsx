@@ -1,0 +1,45 @@
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import { ChatWidget } from '@/components/chat-widget'
+import './globals.css'
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: 'Central de Ajuda | Mundial Telhas',
+  description: 'Encontre respostas rápidas sobre pedidos, garantia, instalação e muito mais. Fale com nosso time de suporte pelos canais disponíveis.',
+  icons: {
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
+  },
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="pt-BR">
+      <body className={`${inter.className} font-sans antialiased`}>
+        {children}
+        <ChatWidget />
+        <Analytics />
+      </body>
+    </html>
+  )
+}
