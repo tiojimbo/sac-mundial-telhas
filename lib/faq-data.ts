@@ -48,7 +48,7 @@ export const faqData: Record<
       value: "garantia-1",
       trigger: "Qual o prazo de garantia das telhas?",
       content:
-        "Oferecemos 5 anos de garantia estrutural contra defeitos de fabricação e 5 anos contra corrosão, conforme laudo técnico do fabricante. Durante esse período, cobrimos falhas de fabricação e corrosão dentro das condições de uso previstas.",
+        "Oferecemos 5 anos de garantia, conforme laudo técnico do fabricante. Durante esse período, cobrimos falhas de fabricação dentro das condições de uso previstas.",
     },
     {
       value: "garantia-2",

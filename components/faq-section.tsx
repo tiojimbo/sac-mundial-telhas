@@ -56,7 +56,7 @@ const faqData: Record<FaqCategory, { value: string; trigger: string; content: st
       value: "garantia-1",
       trigger: "Qual o prazo de garantia das telhas?",
       content:
-        "Oferecemos 10 anos de garantia estrutural contra defeitos de fabricação e 5 anos contra corrosão, conforme laudo técnico do fabricante.",
+        "Oferecemos 10 anos de garantia, conforme laudo técnico do fabricante.",
     },
     {
       value: "garantia-2",
